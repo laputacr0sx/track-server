@@ -1,0 +1,19 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRkYjI1MmU1ZGY2MmI0MDJkNmE2MmYiLCJpYXQiOjE2NDkyNTkwOTB9.S0z2K8ynQWke7oYv7tjrnb0drCqi1Ny1_S6JFaX5--k
+
+###
+GET http://localhost:3000/
+###
+
+POST http://localhost:3000/signup
+content-type: application/json
+
+{
+  "email":"test@test.com",
+  "password":"mypassword"
+}
+###
+
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRkYjI1MmU1ZGY2MmI0MDJkNmE2MmYiLCJpYXQiOjE2NDkyNTkwOTB9.S0z2K8ynQWke7oYv7tjrnb0drCqi1Ny1_S6JFaX5--k
+
+###
