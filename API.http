@@ -1,7 +1,4 @@
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRkYjI1MmU1ZGY2MmI0MDJkNmE2MmYiLCJpYXQiOjE2NDkyNTkwOTB9.S0z2K8ynQWke7oYv7tjrnb0drCqi1Ny1_S6JFaX5--k
-
-###
-GET http://localhost:3000/
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRlOGIxZjY3Zjg2MDhmZWJiMjczMjkiLCJpYXQiOjE2NDkzMTQ1OTF9.VJeuIb_6IZ1mcpite4CA08QYfI3v4y7vFtiedGTYAgI
 ###
 
 POST http://localhost:3000/signup
@@ -14,6 +11,19 @@ content-type: application/json
 ###
 
 GET http://localhost:3000/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRkYjI1MmU1ZGY2MmI0MDJkNmE2MmYiLCJpYXQiOjE2NDkyNTkwOTB9.S0z2K8ynQWke7oYv7tjrnb0drCqi1Ny1_S6JFaX5--k
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRlOGIxZjY3Zjg2MDhmZWJiMjczMjkiLCJpYXQiOjE2NDkzMTQ1OTF9.VJeuIb_6IZ1mcpite4CA08QYfI3v4y7vFtiedGTYAgI
 
 ###
+
+POST http://localhost:3000/signin
+content-type: application/json
+
+{
+  "email":"test@test.com",
+  "password":"mypassword"
+}
+###
+
+GET http://localhost:3000/tracks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRlOGIxZjY3Zjg2MDhmZWJiMjczMjkiLCJpYXQiOjE2NDkzMTQ1OTF9.VJeuIb_6IZ1mcpite4CA08QYfI3v4y7vFtiedGTYAgI
