@@ -27,3 +27,24 @@ content-type: application/json
 GET http://localhost:3000/tracks
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRlOGIxZjY3Zjg2MDhmZWJiMjczMjkiLCJpYXQiOjE2NDkzMTQ1OTF9.VJeuIb_6IZ1mcpite4CA08QYfI3v4y7vFtiedGTYAgI
+
+###
+
+POST http://localhost:3000/tracks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRlOGIxZjY3Zjg2MDhmZWJiMjczMjkiLCJpYXQiOjE2NDkzMTQ1OTF9.VJeuIb_6IZ1mcpite4CA08QYfI3v4y7vFtiedGTYAgI
+
+{
+  "name":"My New Track",
+  "locations":[{
+    "timestamp": 1000000,
+    "coords" :{
+      "latitude": 100,
+      "longitude" :100,
+      "altitude":100,
+      "accuracy":100,
+      "heading":100,
+      "speed":100
+    }
+  }]
+}
